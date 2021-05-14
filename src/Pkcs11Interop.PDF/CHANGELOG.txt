@@ -1,0 +1,31 @@
+﻿Pkcs11Interop.PDF 1.3.0 (2017-05-21)
+ - Pkcs11Interop has been updated to version 3.3.0
+ - iTextSharp has been updated to version 5.5.11
+ - Fix #1: Support for PKCS#11 libraries without CKF_OS_LOCKING_OK
+ - Fixed NullReferenceException when CKA_ID is null
+ - Introduced more obvious Certificate and PrivateKey matching
+ - Solution updated for Visual Studio 2015
+
+Pkcs11Interop.PDF 1.2.0 (2014-06-09)
+ - Added support for certification path building
+ - Added GetSigningCertificate() and GetAllCertificates() methods 
+   to the Pkcs11RsaSignature class
+ - Marked GetCertificateAs*() methods of Pkcs11RsaSignature class as obsolete
+ - Added CertUtils utility class that helps with certificate processing
+ - Added Pkcs11Explorer class that explores PKCS#11 devices
+ - Added demonstration application that performs:
+   - listing of available tokens (i.e. smartcards)
+   - listing of private keys and certificates available on specified token
+   - signing of specified PDF document
+
+Pkcs11Interop.PDF 1.1.0 (2014-03-23)
+ - Pkcs11Interop has been updated to version 2.0
+ - iTextSharp has been updated to version 5.5
+ - Uses NuGet to manage external references
+ - Uses widely supported CKM_RSA_PKCS mechanism instead of CKM_SHA*_RSA_PKCS
+ - Pkcs11Signature class has been renamed to Pkcs11RsaSignature
+ - More detailed description of the code samples
+ - Other minor bug fixes
+
+Pkcs11Interop.PDF 1.0.0 (2013-05-22)
+ - Initial publicly accessible version

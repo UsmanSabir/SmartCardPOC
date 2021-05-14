@@ -1,0 +1,2 @@
+Pkcs11Interop.PDF.Demo --pkcs11-library "acos5evopkcs11.dll" --list-tokens
+Pkcs11Interop.PDF.Demo --pkcs11-library "acos5evopkcs11.dll" --list-objects --pin "12345678" --token-serial "902000A1C4650A00"
